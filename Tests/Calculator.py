@@ -1,4 +1,3 @@
-from selenium.webdriver import Keys
 
 from Pages.SearchPage import SearchPage
 from Tests.BaseTest import Test_Base
