@@ -98,8 +98,16 @@ class Test_Calculator(Test_Base) :
         searchpage = SearchPage(self.driver)
         searchpage.send_share_name(TestData.praj_search)
         searchpage.click_enter()
+        searchpage.search_clear()
         profit = searchpage.find_present_price(TestData.praj_count, TestData.praj_price)
         print("Profit on Praj Industries is ", profit)
+
+    def test_hcg_profit(self):
+        searchpage = SearchPage(self.driver)
+        searchpage.send_share_name(TestData.hcg_search)
+        searchpage.click_enter()
+        profit = searchpage.find_present_price(TestData.hcg_count, TestData.hcg_price)
+        print("Profit on HCG is ", profit)
 
 
 

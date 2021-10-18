@@ -24,6 +24,8 @@ class TestData:
     neuland_count = 50
     praj_price = 297.24
     praj_count = 333
+    hcg_price = 255
+    hcg_count = 509
 
     eicher_search = "Eicher Motors Share"
     itc_search = "ITC Share"
@@ -37,3 +39,5 @@ class TestData:
     kopran_search = "Kopran Share"
     neuland_search = "Neuland Share"
     praj_search = "Praj Industries Share"
+    hcg_search = "HCG Share Price"
+
