@@ -2,7 +2,7 @@ import pytest as pytest
 from selenium import webdriver
 from webdriver_manager.chrome import ChromeDriverManager
 
-driver = None
+
 @pytest.fixture(scope="class")
 def setup(request):
     global driver
@@ -14,7 +14,7 @@ def setup(request):
     driver.close()
 
 
-@pytest.mark.hookwrapper
+'''@pytest.mark.hookwrapper
 def pytest_runtest_makereport(item):
     """
         Extends the PyTest Plugin to take and embed screenshot in html report, whenever test fails.
@@ -38,4 +38,4 @@ def pytest_runtest_makereport(item):
 
 
 def _capture_screenshot(name):
-        driver.get_screenshot_as_file(name)
+        driver.get_screenshot_as_file(name)'''
